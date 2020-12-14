@@ -1,7 +1,7 @@
 BUILD_VERSION   	:= $(shell cat version)
 BUILD_DATE      	:= $(shell date "+%F %T")
 COMMIT_SHA1     	:= $(shell git rev-parse HEAD)
-DOCKER_IMAGE 	    := mritd/ddns
+DOCKER_IMAGE 	    := mritd/dnsbot
 
 all: clean
 	bash .cross_compile.sh
